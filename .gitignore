@@ -1,0 +1,17 @@
+# Ignorar archivos del sistema
+AppData/
+Contacts/
+CrossDevice/
+Downloads/
+Favorites/
+Links/
+Music/
+NTUSER.*
+ntuser.*
+OneDrive/
+Saved Games/
+Searches/
+Videos/
+.bash_history
+.gitconfig
+.vscode/

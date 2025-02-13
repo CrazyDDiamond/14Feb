@@ -1,0 +1,274 @@
+/* Estilos generales */
+body {
+    font-family: 'Serif', cursive ;
+    background-color: #ffe6e6;
+    color: #4d2600;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    border: 10px solid #ff4d4d;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.signature {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #ff4d4d;
+    margin-top: 20px;
+}
+
+.gallery {
+    margin-top: 30px;
+}
+
+#toggleGallery {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggleGallery:hover {
+    background-color: #e60000;
+}
+
+.images {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+.images.show {
+    max-height: 300px;
+}
+
+.carousel-button {
+    background-color: rgba(255, 77, 77, 0.7);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(230, 0, 0, 0.9);
+}
+
+/* Ocultar la barra de desplazamiento */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Animación de personajes */
+.animation-section {
+    margin-top: 30px;
+}
+
+#toggleAnimation {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggleAnimation:hover {
+    background-color: #e60000;
+}
+
+.animation {
+    position: relative;
+    margin-top: 20px;
+    height: 250px; /* Altura fija para el contenedor de la animación */
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.animation.show {
+    max-height: 250px; /* Muestra la animación */
+}
+
+.heart-animation {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: #ff4d4d;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+.person {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    bottom: 20px;
+    animation: kiss 2s infinite ease-in-out;
+}
+
+.person-left {
+    left: 37%;
+    top: 90px;
+}
+
+.person-right {
+    right: 37%;
+    top: 90px;
+}
+
+.text-between {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #ff4d4d;
+    font-family: 'Pacifico' ;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes kiss {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/*Si lees esto me debes unos tacos 😘
+si eres Mich Mendoza ctm FAN jajaj 😂 */
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    color: #ff4d4d;
+}
+
+.heart-top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.heart-top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.heart-bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.heart-bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+.custom-link {
+    position: absolute;
+    top: 150px;
+    left: 40%;
+    color: #ff4d4d; 
+    text-decoration: none; 
+    font-family: 'Pacifico', cursive; 
+    font-size: 1.2rem; 
+    transition: color 0.3s ease; 
+    
+}
+
+.custom-link:hover {
+    color: #e60000; 
+    text-decoration: underline; 
+}

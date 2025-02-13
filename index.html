@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Amor - San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Para mi Novia Preciosa ❤️</h1>
+        </header>
+        <section class="message">
+            <p>Hola mi amor.</p>
+            <p>Has estado aquí por mucho tiempo, en los malos y buenos momentos, en lo tranquilo y en lo difícil, hemos tenido errores, lo sabemos, lo 
+                reconocemos y queremos ser mejores, juntos.</p>
+            <p>Yo sé que de promesas no se vive, tampoco se come, realmente no tengo nada aún que ofrecerte y no sé cómo haré pero, yo quiero estar la 
+                vida junto a tí, últimamente expresarte mis sentimientos es un poco difícil, pero...</p>
+            <p>Gracias por ser mi compañera, mi apoyo y mi razón para sonreír. Te amo más de lo que las palabras pueden expresar.</p>
+            <p>Con todo mi corazón,</p>
+            <p class="signature">Tu pupuchurro(como dicen en betty la fea)  ❤️</p>
+        </section>
+        <section class="gallery">
+            <button id="toggleGallery">Nuestros Momentos ❤️</button>
+            <div class="images hidden">
+                <button class="carousel-button prev" onclick="scrollCarousel(-1)">&#10094;</button>
+                <div class="carousel">
+                    <img src="images/2018.jpg" alt="2018">
+                    <img src="images/2019.jpg" alt="2019">
+                    <img src="images/2020.jpg" alt="2020">
+                    <img src="images/2021.jpg" alt="2021">
+                    <img src="images/2022.jpg" alt="2022">
+                    <img src="images/2023.jpg" alt="2023">
+                    <img src="images/2024.jpg" alt="2024">
+                    <img src="images/2025.jpg" alt="2025">
+                </div>
+                <p>Una foto casi por cada año que hemos estado</p>
+                    <p>De 2018-2025</p>
+                <button class="carousel-button next" onclick="scrollCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+        <section class="animation-section">
+            <button id="toggleAnimation">Ver Animación ❤️</button>
+            <div class="animation hidden">
+                <div class="heart-animation">❤️</div>
+                <div class="person person-left"></div>
+                <div class="text-between">最初</div>
+                <div class="person person-right"></div>
+                <p>
+                    <a href="https://www.youtube.com/watch?v=u7rcs9CMPy4" target="_blank" class="custom-link">
+                        Stay with me my love
+                    </a>
+                </p>
+            </div>
+        </section>
+        <footer>
+            <p>©CrazyDiamond💎 - Hecho con TODO mi amor para ti</p>
+        </footer>
+    </div>
+
+    <!-- Corazones en las esquinas -->
+    <div class="heart heart-top-left">❤️</div>
+    <div class="heart heart-top-right">❤️</div>
+    <div class="heart heart-bottom-left">❤️</div>
+    <div class="heart heart-bottom-right">❤️</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
